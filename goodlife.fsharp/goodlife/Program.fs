@@ -20,8 +20,8 @@ module World =
                     | _                 -> Dead
 
     let evolve (world: World) =
-        let width  = world |> Array2D.length1
-        let height = world |> Array2D.length2
+        let height = world |> Array2D.length1
+        let width  = world |> Array2D.length2
 
         let cellNeighbours i j =
             let rows = seq { Math.Max(0, i - 1) .. Math.Min(i + 1, height - 1) }
@@ -43,8 +43,8 @@ module World =
                     | Dead -> '_'
 
     let printWorld (world: World) =
-        let width  = world |> Array2D.length1
-        let height = world |> Array2D.length2
+        let height = world |> Array2D.length1
+        let width  = world |> Array2D.length2
 
         for i in 0 .. height - 1 do
             for j in 0 .. width - 1 do 

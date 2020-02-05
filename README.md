@@ -1,12 +1,12 @@
 # Game of Life
 
-Implements Conway's [Game Of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+## Implements Conway's [Game Of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 
 It's a coding test translating solution in the *badlife.fsharp* solution into one in the *goodlife.fsharp* solution.
 
 The solution is intentially kept minimalistic with no external dependencies (even to unit test frameworks). 
 
-# Changes compared to BadLife
+## Changes compared to BadLife
 - New module *World* was created to hold all world manipulation logic 
 - ```fsharp    
     let input = System.IO.StreamReader("sample_input.txt")
@@ -74,9 +74,9 @@ The solution is intentially kept minimalistic with no external dependencies (eve
 
 
 
-# Notes
+## Notes
 
-Also Test.fsx demonstrates programmatic usage with an alternative input data set.
+Also Test.fsx demonstrates programmatic usage with an alternative asymetric input data set and three iterations.
 
 Program.main can be called programatically for an input file from the same script file with: 
 `let ret = Program.main [| Path.Combine(__SOURCE_DIRECTORY__, "sample_input2.txt") |]`
